@@ -1,0 +1,332 @@
+nav{
+    position: sticky;
+    top: 0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.342);
+    height: 90px;
+    backdrop-filter: blur(5px);
+
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img{
+    width: 160px;
+    height: 80px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav button{
+    color: #fff;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #cf250e;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+nav button:hover{
+    background-color: #e93820;
+    border-color: #c52f14;
+    color: #fff;
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+.main{
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.363);
+    height: 600px;
+}
+
+.main .left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h3{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+    color: #fff;
+}
+
+.main .left h3 span{
+    color: #db351e;
+}
+
+.main .left p{
+    color: #c4c4c4;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.main .left button{
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #b92c19;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.main .left button:hover{
+    background-color: #db351e;
+    padding: 18px 29px;
+}
+#carouselExampleRide {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto; /* Calcola la somma delle altezze */
+    z-index: -1;
+    padding-left: 0px ;
+    padding-right: 0px ;
+}
+
+.carousel-inner img {
+    min-width: 100%;
+    height: calc(600px + 90px); /* Le immagini si adattano all'altezza */
+    object-fit: cover; /* Copri l'intera area senza distorsioni */
+    object-position: center; /* Centra l'immagine per evitare tagli sui lati sbagliati */
+}
+@media screen and (max-width: 1200px) {
+    
+    .main .left h5{
+        font-size: 18px;
+    }
+
+    .main .left h3{
+        font-size: 36px;
+    }
+
+    .main .left p{
+        font-size: 18px;
+    }
+    .main .right {
+        width: 280px;
+        height: 380px;
+    }
+
+    .main .right img{
+        width: 280px;
+    }
+    .main{
+        height: 820px;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: calc(820px + 90px); /* Le immagini si adattano all'altezza */
+        object-fit: cover; /* Copri l'intera area senza distorsioni */
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+    .main .right {
+        width: 280px;
+        height: 280px;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav{
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+    .main{
+        padding: 42px;
+        height: 650px;
+    }
+    .main .right{
+        margin-left: 130px;
+    }
+
+    .main .left h3 {
+        font-size: 28px;
+    }
+
+    .main .left p {
+        font-size: 16px;
+    }
+
+    .main .right img {
+        max-width: 200px;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: calc(650px + 90px); /* Le immagini si adattano all'altezza */
+        object-fit: cover; /* Copri l'intera area senza distorsioni */
+    }
+    
+
+  
+
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    nav .logo a{
+        font-size: 18px;
+    }
+
+    .main .left h3{
+        font-size: 23px;
+    }
+
+    .main .left p{
+        font-size: 13px;
+    }
+    .main{
+        height: 750px;
+    }
+    .main .right img {
+        max-width: 150px;
+    }
+    .carousel-inner img {
+        width: 10%;
+        height: calc(750px + 90px); /* Le immagini si adattano all'altezza */
+        object-fit: cover; /* Copri l'intera area senza distorsioni */
+    }
+    
+    .main .left button{
+        width: 100%;
+    }
+
+   
+
+}
+@media screen and (max-width: 300px) {
+    
+    nav ul li a{
+        font-size: 8.8px;
+        display: block; 
+    }
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        display: block; /* Imposta gli li in blocco, così si dispongono verticalmente */
+    }
+
+    nav .logo img{
+        width: 120px;
+        height: 60px;
+    }
+    nav{
+        height: 160px;
+        position: relative;
+    }
+    nav button{
+        width: 25px;
+        height: 25px;
+    }
+
+    .main{
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .main .left h3{
+        font-size: 23px;
+    }
+
+    .main .left p{
+        font-size: 13px;
+    }
+    .main .right img {
+        max-width: 150px;
+        top: 0;
+        left: 0;
+    }
+    .main{
+        height: 800px;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: calc(900px + 90px); /* Le immagini si adattano all'altezza */
+        object-fit: cover; /* Copri l'intera area senza distorsioni */
+    }
+    .main .left button{
+        width: 100%;
+    }
+    
+
+}
