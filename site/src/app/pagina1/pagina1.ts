@@ -4,6 +4,10 @@ import { Product } from '../product';
 import { ProductDetail } from '../product-detail/product-detail';
 import { ProductList } from '../product-list/product-list';
 
+
+
+
+
 @Component({
   selector: 'app-pagina1',
   imports: [CommonModule, ProductList, ProductDetail],

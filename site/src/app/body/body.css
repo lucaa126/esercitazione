@@ -1,7 +1,8 @@
 
 .skills{
-    padding: 110px 85px 0;
+    padding: 120px 85px 0;
     background-color: #131313fa;
+    margin-top:0px;
 }
 .back{
     background-color: #131313fa;
@@ -98,81 +99,6 @@
     margin-top: 30px;
     color: #bdbdbd;
 }
-.site-footer
-{
-  background-color:#131313fa;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#ffffff;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  color:white;
-  margin:0
-}
 
 @media screen and (max-width: 1200px) {
     
@@ -260,13 +186,7 @@
     }
     
 }
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
+
 
 @media screen and (max-width: 768px) {
     
@@ -344,67 +264,7 @@
 
 
 }
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.youtube:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.instagram:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-/* Stili aggiuntivi per i contatti (se necessario) */
-.footer-contacts {
-    padding-left: 0;
-    list-style: none;
-}
 
-.footer-contacts li {
-    margin-bottom: 5px;
-    color: white;
-}
-
-.footer-contacts a {
-    color: #ffffff; /* Adatta il colore se necessario */
-    text-decoration: wh;
-}
-
-.footer-contacts a:hover {
-    color: #3366cc;
-    text-decoration: none;
-}
-.text-justify{
-  color: white;
-}
 @media screen and (max-width: 576px) {
     
     nav ul li a{

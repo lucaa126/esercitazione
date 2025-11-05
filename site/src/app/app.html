@@ -7,9 +7,9 @@
       <ul>
         <li><a routerLink="/pagina1" routerLinkActive="active" style="cursor: pointer;">Sostanze</a></li>
         <li><a routerLink="/.." routerLinkActive="active" style="cursor: pointer;">Home</a></li>
-        <li><a routerLink="/pagina2" routerLinkActive="active" style="cursor: pointer;">pagina2</a></li>
+        <li><a routerLink="/pagina2" routerLinkActive="active" style="cursor: pointer;">Contatti</a></li>
       </ul>
-      <button><a href="#footer" role="button">Contatti</a></button>
+      <button><a routerLink="/pagina2" routerLinkActive="active" style="cursor: pointer;">Email</a></button>
       <button id="menuButton" (click)="openMenu()">
         <i class='bx bx-menu'></i>
       </button>
@@ -45,5 +45,6 @@
         </div>
     </div>
     <app-body></app-body>
+    <app-footer></app-footer>
   </ng-container>
 </div>

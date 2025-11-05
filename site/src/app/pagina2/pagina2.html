@@ -1,1 +1,41 @@
-<p>pagina2 works!</p>
+<img class="page-bg" src="https://cdn.wallpapersafari.com/97/39/vPCVpT.jpg" alt="" aria-hidden="true">
+<div class="contact-page">
+  <!-- immagine di sfondo via link: sostituisci con la tua URL -->
+
+
+
+  <div class="contact-content">
+    <h2>Contatti</h2>
+
+    <!-- messaggi di stato -->
+    <div class="msg success" *ngIf="successMessage">{{ successMessage }}</div>
+    <div class="msg error" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+    <form id="contactForm" (submit)="sendContact($event)" novalidate>
+      <label>
+        Nome
+        <input name="name" type="text" required placeholder="Il tuo nome">
+      </label>
+
+      <label>
+        Email
+        <input name="email" type="email" required placeholder="email@esempio.com">
+      </label>
+
+      <label>
+        Oggetto
+        <input name="subject" type="text" placeholder="Oggetto (opzionale)">
+      </label>
+
+      <label>
+        Messaggio
+        <textarea name="message" rows="6" required placeholder="Scrivi qui il tuo messaggio"></textarea>
+      </label>
+
+      <button type="submit">Invia</button>
+    </form>
+
+    <!-- target anchor per scroll se serve -->
+    <div id="footer" style="margin-top:40px"></div>
+  </div>
+</div>

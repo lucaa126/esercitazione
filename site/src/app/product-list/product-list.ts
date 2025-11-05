@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { Product } from '../product';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-product-list',
   imports: [CommonModule, FormsModule],
