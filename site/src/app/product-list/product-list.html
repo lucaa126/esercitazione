@@ -1,0 +1,33 @@
+<h3 id="prod">Prodotti</h3>
+<input class="form-control mb-3" [(ngModel)]="searchTerm" placeholder="Cerca per nome" style="margin: 10px; margin-top: 40px; width: 99%; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);">
+
+<!-- Bottone toggle aggiunta -->
+<button class="btn mb-3 w-90" (click)="toggleAddForm()" style="margin: 10px; background-color: #ac2b2b; color:#fff;">
+  {{ showAddForm ? 'Chiudi Form Aggiunta' : 'Aggiungi Prodotto' }}
+</button>
+
+<!-- Form aggiunta -->
+<form *ngIf="showAddForm" (ngSubmit)="submitForm()" class="mb-4 border p-3 rounded shadow-sm bg-light">
+  <input class="form-control mb-2" [(ngModel)]="newName" name="name" placeholder="Nome" required>
+  <input class="form-control mb-2" [(ngModel)]="newPrice" name="price" type="number" placeholder="Prezzo" required>
+  <input class="form-control mb-2" [(ngModel)]="newDescription" name="description" placeholder="Descrizione" required>
+  <input class="form-control mb-2" [(ngModel)]="newImageUrl" name="imageUrl" placeholder="URL Immagine" required>
+  <button class="btn w-100" type="submit" style="background-color: #ac2b2b; color:#fff;">Salva Prodotto</button>
+</form>
+
+<!-- Griglia prodotti -->
+<!-- Griglia responsive 6 per riga su schermi grandi -->
+<div class="row">
+    <div class="col-6 col-sm-4 col-md-2 mb-4" *ngFor="let product of filteredProducts; let i = index">
+        <div class="card h-100" style="box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);">
+            <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <p><strong>€{{ product.price }}</strong></p>
+                <button class="btn btn-sm me-2" (click)="selectProduct.emit(product)" style="background-color: #f4f4f4;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);" id="btndettagli"><i class='bx bxs-comment-detail' style='color:#ac2b2b'  ></i></button>
+                <button class="btn btn-sm" (click)="deleteProduct.emit(i)"style="background-color: #f4f4f4;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);"><i class='bx bxs-trash-alt' style='color:#ac2b2b' ></i></button>
+            </div>
+        </div>
+    </div>
+</div>

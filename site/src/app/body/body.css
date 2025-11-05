@@ -1,0 +1,510 @@
+
+.skills{
+    padding: 110px 85px 0;
+    background-color: #131313fa;
+}
+.back{
+    background-color: #131313fa;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.skills h3,
+.about .right h3,
+.portfolio .header h3,
+.feedback h3{
+    font-size: 40px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.skills .skill-items{
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.skills .skill-items .item{
+    background-color: #141414ce;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.95);
+    width: 25%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+.skills .skill-items .item:hover{
+    margin: 13px;
+    box-shadow: 0 5px 15px #e6e6e6;
+}
+
+.skills .skill-items .item .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill-items .item .icon i{
+    font-size: 26px;
+    color: #000000;
+}
+
+.skills .skill-items .item h4,
+.portfolio .portfo-items .item .info h4{
+    font-size: 18px;
+    color: #eeeeee;
+}
+
+.skills .skill-items .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #bdbdbd;
+}
+
+.about{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1.5);
+    margin: 50px;
+    border-radius: 30px;
+    margin-top: 100px;
+     background-color: #141414ce;
+   
+}
+
+.about .left{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.about .left img{
+    width: 440px;
+}
+
+.about .right p{
+    font-size: 16px;
+    margin-top: 30px;
+    color: #bdbdbd;
+}
+.site-footer
+{
+  background-color:#131313fa;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  color:white;
+  margin:0
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .main .left h5{
+        font-size: 18px;
+    }
+
+    .main .left h3{
+        font-size: 36px;
+    }
+
+    .main .left p{
+        font-size: 18px;
+    }
+    .main .right {
+        width: 280px;
+        height: 380px;
+    }
+
+    .main .right img{
+        width: 280px;
+    }
+    .main{
+        height: 820px;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: calc(520px + 90px); /* Le immagini si adattano all'altezza */
+        object-fit: cover; /* Copri l'intera area senza distorsioni */
+    }
+
+    .skills .skill-items{
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .skills .skill-items .item{
+        width: 49%;
+    }
+
+    .about .left img{
+        width: 370px;
+    }
+
+    .skills h3,
+    .about .right h3,
+    .portfolio .header h3,
+    .feedback h3{
+        font-size: 32px;
+    }
+
+    .about .right p{
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+    .main .right {
+        width: 280px;
+        height: 280px;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .about{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav{
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+    .main{
+        padding: 42px;
+        height: 650px;
+    }
+    .main .right{
+        margin-left: 130px;
+    }
+
+    .main .left h3 {
+        font-size: 28px;
+    }
+
+    .main .left p {
+        font-size: 16px;
+    }
+
+    .main .right img {
+        max-width: 200px;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: calc(350px + 90px); /* Le immagini si adattano all'altezza */
+        object-fit: cover; /* Copri l'intera area senza distorsioni */
+    }
+    
+
+    .skills{
+        padding: 85px 42px 0;
+    }
+
+    .skills .skill-items{
+        gap: 8px;
+    }
+    .item p{
+        overflow: auto;
+        height: 60px;
+    }
+    .item h4 {
+        font-size: 17px !important;
+    }
+    .icon i {
+        font-size: 15px !important;
+        margin: 10px;
+    }
+    
+    .about{
+        padding: 85px 42px;
+    }
+
+
+
+
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.youtube:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.instagram:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+/* Stili aggiuntivi per i contatti (se necessario) */
+.footer-contacts {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-contacts li {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.footer-contacts a {
+    color: #ffffff; /* Adatta il colore se necessario */
+    text-decoration: wh;
+}
+
+.footer-contacts a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+.text-justify{
+  color: white;
+}
+@media screen and (max-width: 576px) {
+    
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    nav .logo a{
+        font-size: 18px;
+    }
+
+    .main .left h3{
+        font-size: 23px;
+    }
+
+    .main .left p{
+        font-size: 13px;
+    }
+    .main{
+        height: 750px;
+    }
+    .main .right img {
+        max-width: 150px;
+    }
+    .carousel-inner img {
+        width: 10%;
+        height: calc(250px + 90px); /* Le immagini si adattano all'altezza */
+        object-fit: cover; /* Copri l'intera area senza distorsioni */
+    }
+    
+    .main .left button{
+        width: 100%;
+    }
+
+    .skills .skill-items .item{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 300px) {
+    
+    nav ul li a{
+        font-size: 8.8px;
+        display: block; 
+    }
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        display: block; /* Imposta gli li in blocco, così si dispongono verticalmente */
+    }
+
+    nav .logo img{
+        width: 120px;
+        height: 60px;
+    }
+    nav{
+        height: 160px;
+        position: relative;
+    }
+    nav button{
+        width: 25px;
+        height: 25px;
+    }
+
+    .main{
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .main .left h3{
+        font-size: 23px;
+    }
+
+    .main .left p{
+        font-size: 13px;
+    }
+    .main .right img {
+        max-width: 150px;
+        top: 0;
+        left: 0;
+    }
+    .main{
+        height: 800px;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: calc(200px + 90px); /* Le immagini si adattano all'altezza */
+        object-fit: cover; /* Copri l'intera area senza distorsioni */
+    }
+    .main .left button{
+        width: 100%;
+    }
+    .skills .skill-items .item{
+        width: 100%;
+    }
+    .skills .skill-items{
+        gap: 6px;
+    }
+    
+}
+
+
+

@@ -17,7 +17,13 @@ nav .logo{
     display: flex;
     align-items: center;
 }
-
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
 nav .logo a{
     margin-left: 8px;
     font-weight: bold;
@@ -67,7 +73,7 @@ nav button#menuButton{
     color: #fff;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.363);
-    height: 600px;
+    height: 821px;
 }
 
 .main .left{
@@ -120,7 +126,7 @@ nav button#menuButton{
 
 .carousel-inner img {
     min-width: 100%;
-    height: calc(600px + 90px); /* Le immagini si adattano all'altezza */
+    height: calc(821px + 90px); /* Le immagini si adattano all'altezza */
     object-fit: cover; /* Copri l'intera area senza distorsioni */
     object-position: center; /* Centra l'immagine per evitare tagli sui lati sbagliati */
 }

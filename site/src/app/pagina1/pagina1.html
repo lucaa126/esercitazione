@@ -1,1 +1,16 @@
-<p>pagina1 works!</p>
+<app-product-list
+  [products]="products"
+  (selectProduct)="onSelectProduct($event)"
+  (deleteProduct)="onDeleteProduct($event)"
+  (addProduct)="onAddProduct($event)">
+</app-product-list>
+
+<!-- Overlay dettaglio -->
+<div class="overlay" *ngIf="selectedProduct" (click)="onCloseDetail()">
+  <div class="overlay-panel" (click)="$event.stopPropagation()">
+    <app-product-detail
+      [product]="selectedProduct"
+      (close)="onCloseDetail()">
+    </app-product-detail>
+  </div>
+</div>

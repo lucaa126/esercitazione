@@ -1,0 +1,34 @@
+<div *ngIf="product && editedProduct" class="card shadow p-3" style="margin-right: 10px;">
+    <h4 style="margin: 10px; margin-bottom: 20px;">Dettagli Prodotto</h4>
+  
+    <img [src]="editedProduct.imageUrl" alt="{{ editedProduct.name }}" class="img-fluid mb-3">
+  
+    <div *ngIf="!isEditing">
+      <p><strong style='color:#ac2b2b;'>Nome:</strong> {{ product.name }}</p>
+      <p><strong style='color:#ac2b2b;'>Descrizione:</strong> {{ product.description }}</p>
+      <p><strong style='color:#ac2b2b;'>Prezzo:</strong> €{{ product.price }}</p>
+      <button class="btn me-2" (click)="edit()" style='background-color: #f4f4f4; font-size: 25px; border-radius: 5px;padding: 5px 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); margin-right: 10px;'><i class='bx bxs-edit-alt' style='color:#ac2b2b;' ></i></button>
+      <button class="btn" (click)="cancel()"  style='background-color: #f4f4f4; font-size: 25px; border-radius: 5px;padding: 5px 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); margin-left: 10px;'><i class='bx bx-window-close' style='color:#ac2b2b' ></i></button>
+    </div>
+  
+    <form *ngIf="isEditing" (ngSubmit)="save()">
+      <div class="mb-2">
+        <label>Nome</label>
+        <input [(ngModel)]="editedProduct.name" name="name" class="form-control" required />
+      </div>
+      <div class="mb-2">
+        <label >Descrizione</label>
+        <textarea [(ngModel)]="editedProduct.description" name="description" class="form-control" required></textarea>
+      </div>
+      <div class="mb-2">
+        <label>Prezzo</label>
+        <input type="number" [(ngModel)]="editedProduct.price" name="price" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label>URL Immagine</label>
+        <input [(ngModel)]="editedProduct.imageUrl" name="imageUrl" class="form-control" required />
+      </div>
+      <button type="submit" class="btn me-2" style='background-color: #f4f4f4; font-size: 25px; border-radius: 5px;padding: 5px 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); margin-left: 10px;'><i class='bx bxs-save' style='color:#ac2b2b' ></i></button>
+      <button type="button" class="btn" (click)="cancel() "style='background-color: #f4f4f4; font-size: 25px; border-radius: 5px;padding: 5px 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); margin-left: 10px;'><i class='bx bx-window-close' style='color:#ac2b2b' ></i></button>
+    </form>
+  </div>

@@ -1,0 +1,9 @@
+.row{
+    margin: 10px;
+}
+#prod{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    color: #b92c19;
+}

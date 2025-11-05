@@ -1,43 +1,49 @@
 <div class="start">
   <nav>
       <div class="logo">
-        <img src="https://www.wiredledlight.com/wired/images/logo.png">
+        <img src="assets/DRTlogo.png" alt="DRT Canada Logo">
         <a href="index.html" target="_blank"></a>
       </div>
       <ul>
-        <li><a href="#about">Azienda</a></li>
-        <li><a href="#prod">Prodotti</a></li>
-        <li><a href="#portfolio">Evidenza</a></li>
+        <li><a routerLink="/pagina1" routerLinkActive="active" style="cursor: pointer;">Sostanze</a></li>
+        <li><a routerLink="/.." routerLinkActive="active" style="cursor: pointer;">Home</a></li>
+        <li><a routerLink="/pagina2" routerLinkActive="active" style="cursor: pointer;">pagina2</a></li>
       </ul>
       <button><a href="#footer" role="button">Contatti</a></button>
       <button id="menuButton" (click)="openMenu()">
         <i class='bx bx-menu'></i>
       </button>
   </nav>
-  <div class="main" id="main">
-    <div class="left">
-      <h5> Wired LED</h5>
-      <h3>L'energia della <span>luce, il futuro</span> dell' illuminazione</h3>
-      <p>
-        Illuminiamo il tuo mondo con efficienza, design e tecnologia all'avanguardia.
-      </p>
-      <a href="https://www.wiredledlight.com/wired/lib/files/cat_wired_2020_72dpi_pag_singole.pdf" download="catalogo_2025.pdf">
-        <button>Scarica il Catalogo</button>
-      </a>
+  <router-outlet></router-outlet>
+
+  <!-- mostrare queste sezioni solo se showStaticSections è true -->
+  <ng-container *ngIf="showStaticSections">
+    <div class="main" id="main">
+      <div class="left">
+        <h5> DRT</h5>
+        <h3>SOLO <span>LEGALITÀ</span> CANADESE</h3>
+        <p>
+          Qualità senza pari e sicurezza eccezionale.
+        </p>
+        <a href="#skills" >
+          <button>Scopri</button>
+        </a>
+      </div>
     </div>
-  </div>
-    
-  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
           <div class="carousel-item active">
-              <img src="https://thumbs.dreamstime.com/b/colline-nevose-nella-notte-di-natale-montagna-neve-bianca-sullo-sfondo-nero-su-fondo-338021851.jpg" class="d-block w-auto" alt="">
+              <img src="https://www.rehabguide.co.uk/wp-content/uploads/2012/06/End-to-cocaine-addiction.jpg" class="d-block w-auto" alt="">
           </div>
           <div class="carousel-item">
-              <img src="https://wallpapers.com/images/hd/white-bulbs-hd-lights-36a8duz7js1lsn12.jpg" class="d-block w-auto" alt="">
+              <img src="https://www.cepol.europa.eu/api/assets/styles/ui_default/public/media/images/photo/2025/European-Drug-Markets-MDMA-ecstasy.jpg?itok=4FdYORa-" class="d-block w-auto" alt="">
           </div>
           <div class="carousel-item">
-              <img src="https://southernoutdoorlightingfl.com/wp-content/uploads/2023/11/Professional-Outdoor-Lighting-Installed-in-Central-FL.jpeg" class="d-block w-auto" alt="">
+              <img src="https://medlineplus.gov/images/Methamphetamine_share.jpg" class="d-block w-auto" alt="">
           </div>
         </div>
     </div>
+    <app-body></app-body>
+  </ng-container>
 </div>
