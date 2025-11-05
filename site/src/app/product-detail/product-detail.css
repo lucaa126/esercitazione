@@ -1,0 +1,19 @@
+p{
+    color: #d1d1d1;
+}
+h4{
+    color: white;
+}
+label {
+    color: white;
+}
+input, textarea {
+    background-color: #202020fa;
+    color: #ffffff; /* testo bianco */
+    border: 1px solid #111111; /* bordo più scuro per contrasto */
+    border-radius: 6px; /* arrotondamento leggero per estetica */
+    padding: 10px; /* spazio interno per migliorare leggibilità */
+}
+input::placeholder, textarea::placeholder {
+    color: #cccccc; /* colore placeholder più tenue */
+}

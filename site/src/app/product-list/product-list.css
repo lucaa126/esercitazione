@@ -7,3 +7,34 @@
     margin-top: 40px;
     color: #b92c19;
 }
+html{
+    background-color: #131313fa;
+    padding-top: 10px;
+}
+.search {
+    margin: 10px; 
+    margin-top: 40px;
+    width: 99%; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.85); 
+    background-color: #202020fa;
+    color: #ffffff; /* testo bianco */
+    border: 1px solid #111111; /* bordo più scuro per contrasto */
+    border-radius: 6px; /* arrotondamento leggero per estetica */
+    padding: 10px; /* spazio interno per migliorare leggibilità */
+}
+.search::placeholder {
+    color: #cccccc; /* colore placeholder più tenue */
+}
+.search:focus {
+    outline: none;
+    border-color: #555; /* bordo leggermente più chiaro al focus */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
+}
+.card{
+    background-color: #202020fa;
+    color: #ffffff; /* testo bianco */
+    border: 1px solid #111111; /* bordo più scuro per contrasto */
+    border-radius: 10px; /* arrotondamento leggero per estetica */
+    padding: 10px; /* spazio interno per migliorare leggibilità */
+}
+

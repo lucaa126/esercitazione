@@ -16,6 +16,7 @@ nav{
 nav .logo{
     display: flex;
     align-items: center;
+    max-width: 100px;
 }
 nav a {
     text-decoration: none;
@@ -130,6 +131,10 @@ nav button#menuButton{
     object-fit: cover; /* Copri l'intera area senza distorsioni */
     object-position: center; /* Centra l'immagine per evitare tagli sui lati sbagliati */
 }
+.start {
+  background-color: transparent;
+}
+
 @media screen and (max-width: 1200px) {
     
     .main .left h5{
